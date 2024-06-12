@@ -1,0 +1,41 @@
+{% extends 'app/base.html' %}
+{% block title %} <title>Restaurant</title> {% endblock %}
+{% block nav_active %} <li class="visible-xs active"> {% endblock %}
+
+{% block style %}
+   
+{% endblock %}      
+    
+{% block body %}
+
+    <!-- restaurant image -->
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <img src="/media/app/images/restaurant image.gif"  class="img-fluid" alt="img" >
+                </div>
+           </div>
+    <!-- tiles -->
+    <div class=" container-fluid">
+        <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="/app/menu"><div id="menu-tiles"><span>Menu</span></div></a>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 col-xs-12" >
+            <!-- <a href="specials.html"> -->
+                <div id="specials-tiles" onclick="loadRandomPage()"><span>Specials</span></div>
+                <div id="pageContent"></div>
+                
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="https://goo.gl/maps/fe6GkVC6hRKyid1i7" target="_blank"><div id="map-tiles"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.5580132049276!2d74.49212067299254!3d19.900876781481013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc4474a245d261%3A0x806a6b9889186a80!2sSanjivani%20College%20of%20Engineering%2C%20Kopargaon!5e0!3m2!1sen!2sin!4v1687454903817!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>Map</span></div></a>
+        </div>
+        </div>
+    </div>
+   
+ 
+    {% endblock %}
+    <!-- footer -->
+    
